@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Fklubben_text">
+        <item name="android:textColor">#D07EC79E</item>
+    </style>
+
+    <style name="Fklubben_menu">
+        <item name="android:textColor">#D07EC79E</item>
+        <item name="android:background">#D07EC79E</item>
+        <item name="android:layout_width">50dp</item>
+    </style>
+
 </resources>
