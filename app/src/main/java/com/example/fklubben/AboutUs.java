@@ -14,7 +14,7 @@ public class AboutUs extends AppCompatActivity {
     }
 
     public void onClickDrinks(View view){
-        Intent intent = new Intent(this, drinks.class);
+        Intent intent = new Intent(this, DrinksActivity.class);
         startActivity(intent);
     }
 

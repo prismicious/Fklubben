@@ -6,15 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    final Button aboutUsButton = (Button) findViewById(R.id.btn_aboutus);
-    final Button mapButton = (Button) findViewById(R.id.btn_map);
-    final Button drinksButton = (Button) findViewById(R.id.btn_drinks);
-    final Button contactButton = (Button) findViewById(R.id.btn_kontakt);
-    final Button testButton = (Button) findViewById(R.id.btn_test);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickDrinks(View view){
-        Intent intent = new Intent(this, drinks.class);
+        Log.i("test","hertil");
+        Intent intent = new Intent(this, DrinksActivity.class);
         startActivity(intent);
     }
 
@@ -41,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickMap(View view){
         Intent intent = new Intent(this, map.class);
+        startActivity(intent);
+    }
+
+    public void onClickProfile(View view){
+        Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
 
